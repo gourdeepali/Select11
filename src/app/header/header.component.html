@@ -1,0 +1,31 @@
+<div class="s">
+    <nav class=" navbar navbar-light sticky-top" style="background-color: rgb(7, 32, 116);
+    height: 60px; ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">WellCome {{loginStatus}}</a>
+            </div>
+            <div class="collapse navbar-collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li routerLinkActive="active">
+                        <a routerLink="/">Home</a></li>
+
+                    <li *ngIf="loginStatus===Admin || loginStatus===Guest"
+                     routerLinkActive="active">
+                        <a routerLink="/players" >Players</a></li>
+
+                    <li *ngIf="loginStatus===Admin"
+                     routerLinkActive="active">
+                        <a routerLink="/team">Team</a></li>
+
+                    <li *ngIf="loginStatus===Admin || loginStatus===Guest"
+                     routerLinkActive="active">
+                        <a routerLink="/matchSchedule">Match Schedule</a></li>
+
+                     <li routerLinkActive="active">
+                        <a routerLink="/login">{{buttonName}}</a></li> 
+                </ul>                 
+            </div>
+        </div>
+    </nav>
+</div>

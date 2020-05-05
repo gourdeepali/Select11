@@ -1,0 +1,17 @@
+.img{
+    height: 270px;
+    width: 400px;
+    margin-left: 100px;
+}
+.col-md-7{
+    margin-left: 75px;
+}
+#list{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+/* .display{
+    border: 2px solid lightblue;
+    border-style: groove;
+    left: 50px;
+} */

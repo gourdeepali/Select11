@@ -1,0 +1,16 @@
+<div class="col-md-4">
+  <a class="list-group-item clearfix" style="width: 270px; height: 365;">
+      <div class="card" style="width:  250px;">
+          <img src={{player.smallPic}} 
+          class="card-img-top" alt="{{player.name}}">
+          <div class="card-body">
+            <h5 class="card-title" >{{player.name}}</h5>
+            <p class="card-text"><b>Strength:</b>{{player.strength}}<br>
+             <b> Weekness:</b>{{player.weekness}}
+            </p>
+            <a class="btn btn-primary" (click)="onRemove(index)">Remove</a>
+          </div>
+      </div>
+  </a>
+</div>     
+

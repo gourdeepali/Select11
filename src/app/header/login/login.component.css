@@ -1,0 +1,46 @@
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    opacity:1;
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+
+.card-header{
+    text-align: center;
+    margin-top: 20px;
+    color:rgb(7, 32, 116);
+    font-size: larger;
+}
+
+.card-body {
+   margin-left: 25px;
+    width: fit-content;
+    margin-left: 50px;
+}
+
+.input{
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    box-shadow: none;
+}
+
+button{
+    background-color:rgb(7, 32, 116);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    
+}
+

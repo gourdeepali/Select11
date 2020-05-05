@@ -1,0 +1,7 @@
+<div class="container">
+<div class="col-md-5">
+    <app-player-item
+    *ngFor="let p of playerList; let i=index"
+    [player]="p"
+    [index]="i" ></app-player-item>
+</div>

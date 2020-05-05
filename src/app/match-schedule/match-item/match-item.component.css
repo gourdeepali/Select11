@@ -1,0 +1,37 @@
+.col-md-10{
+    background-image: url("https://cdn.shopify.com/s/files/1/0031/6656/8493/files/Venue-SCG-Banner_1.png?v=1559201787");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.151); 
+    background-blend-mode:lighten;
+    border: 5px solid white;
+    border-radius: 10px;
+    
+}
+.container{
+    color: black;
+    text-align: center;
+}
+.container:hover{
+    font-size: larger;
+}
+.col-md-7{
+    margin-left: 50px;
+    padding-left: 70px;
+    background-color: rgba(255, 255, 255, 0.596); 
+    background-blend-mode:lighten;
+    width: 600px;
+    height: fit-content;
+    left: 80px;
+    position: relative;
+    
+}
+h3:hover,h4:hover{
+    color: white;
+}
+.col-md-10:hover{
+    background-color: rgb(19, 16, 34);
+    background-blend-mode:hard-light;
+
+}

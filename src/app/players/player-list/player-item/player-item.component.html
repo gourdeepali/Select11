@@ -1,0 +1,16 @@
+<a style="cursor:pointer;"  class="list-group-item clearfix" id="list" 
+ [routerLink]="[index]"
+  routerLinkActive="active">    
+
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{player.name}}</h4>
+        <p class="list-group-item-text">{{player.role}} - {{player.speciality}}
+
+        </p>
+    </div>
+    <span class="pull-right">
+       <button *ngIf="user==='Admin'" id="btn"
+       class="btn btn-success" [disabled]="isDisabled()"
+       (click)="onAddToTeam(index)">Add to team</button>
+    </span>            
+</a>

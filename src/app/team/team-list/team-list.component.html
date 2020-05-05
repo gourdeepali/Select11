@@ -1,0 +1,12 @@
+<h2>Indian Squad</h2>
+<div class="container">
+    <div class="row">
+            <app-team-item
+            *ngFor="let player of team; let i=index"
+                [player]="player"
+                [index]="i"
+                ></app-team-item> 
+        
+    </div>
+   
+</div>

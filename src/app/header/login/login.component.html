@@ -1,0 +1,50 @@
+<div class="picture">
+    <div >
+        <div class="container-md">
+            <div class="text-center">
+                <img 
+                src="https://i.pinimg.com/originals/81/dd/d3/81ddd367e580ac8909ea032cca1a50ca.jpg"
+                 class="rounded"
+                 alt="Stadium"
+                 style="width: 100%; height: 620px;">
+                
+              </div>
+        </div>
+        
+    </div> 
+
+    <div class="container">
+        <div class="card" >
+            <div class="card-header">
+              <h3>Login</h3>
+              <hr>
+            </div>
+        <form (ngSubmit)="onSubmit()" #f="ngForm">
+            <div class="card-body ">
+                <label>User Id:</label>
+                <br>
+                <input class="input" 
+                type="text"
+                required
+                name="username"
+                ngModel
+                >
+                <br>
+                <label>Password</label>
+                <br>
+                <input class="input" type="password"
+                required
+                name="password"
+                ngModel 
+                ><br>
+                <br>
+             <button class="btn btn-primary"
+             type="submit"
+             [disabled]="!f.valid"
+             >Login</button>
+            </div>
+        </form>
+          </div>
+    </div>
+
+</div>

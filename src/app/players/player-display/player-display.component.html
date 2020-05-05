@@ -1,0 +1,28 @@
+<div class="display">
+    <img src={{player.LargePic}} alt={{player.name}} class="img">
+        <div class="col-md-7" style="text-align: center;">
+            <a class="list-group-item clearfix" id="list" >
+                <p><b>Name :</b> {{player.name}}  </p>
+            </a>
+            <a class="list-group-item clearfix" id="list">
+                <p><b>Role :</b> {{player.role}}  </p>
+            </a>
+            <a class="list-group-item clearfix" id="list">
+                <p><b>Speciality :</b> {{player.speciality}}  </p>
+            </a>
+            <a class="list-group-item clearfix" id="list">
+                <p><b>Matches :</b> {{player.matches}}  </p>
+            </a>
+            <a *ngIf="player.role !='Bowler'"class="list-group-item clearfix" id="list">
+                <p><b>Runs :</b> {{player.run}}  </p>
+            </a>
+            <a *ngIf="player.role !='Batsman'" class="list-group-item clearfix" id="list">
+                <p><b>Wickets :</b> {{player.wicket}}  </p>
+            </a>
+            <a class="list-group-item clearfix" id="list">
+                <p><b>Strike Rate :</b> {{player.strikeRate}}  </p>
+            </a>
+
+        </div>
+
+</div>
